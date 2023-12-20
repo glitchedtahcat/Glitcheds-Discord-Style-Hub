@@ -1,0 +1,127 @@
+/**
+ * @name Rainbow Discord
+ * @author Glitched
+ * @description Rainbow Version of discord.
+*/
+
+
+@font-face {
+    font-family: "Dashless";
+        src: url("https://vendicated.github.io/random-files/Dashless.woff2") format("woff2");
+        }
+        
+        [data-list-item-id^=channels___], /* channel list */
+        [class^=titleWrapper] > h1, /* top bar with topic */
+        [class^=resultChannel], /* channel name@font-face {
+    font-family: "Dashless";
+    src: url("https://vendicated.github.io/random-files/Dashless.woff2") format("woff2");
+}
+
+[data-list-item-id^=channels___], /* channel list */
+[class^=titleWrapper] > h1, /* top bar with topic */
+[class^=resultChannel], /* channel name in search */
+[class^=channelMention], /* channel mentions in chat */
+[class^=placeholder][class*=slateTextArea] /* "Send a message in #blah" */
+{
+    font-family: "Dashless", var(--font-primary);
+}
+@keyframes kinetic-chrome {
+  0% { --channel-i: #ff0000; }
+  25% {  --channel-i: #00ff00; }
+  50% {  --channel-i: #0000ff; }
+  75% {  --channel-i: #00ffff; }
+  100% {  --channel-i: #ff00ff; }
+}
+@keyframes nameBG {
+  0% { --username-bg: url(//raw.githubusercontent.com/dwnas/assets/main/snippets/nameBackground/11.gif); }
+  15% {  --username-bg: url(//raw.githubusercontent.com/dwnas/assets/main/snippets/nameBackground/12.gif); }
+  25% {  --username-bg: url(//raw.githubusercontent.com/dwnas/assets/main/snippets/nameBackground/13.gif); }
+  35% {  --username-bg: url(//raw.githubusercontent.com/dwnas/assets/main/snippets/nameBackground/14.gif); }
+45% {  --username-bg: url(//raw.githubusercontent.com/dwnas/assets/main/snippets/nameBackground/15.gif); }
+  55% {  --username-bg: url(//raw.githubusercontent.com/dwnas/assets/main/snippets/nameBackground/16.gif); }
+  65% {  --username-bg: url(//raw.githubusercontent.com/dwnas/assets/main/snippets/nameBackground/11.gif); }
+  75% {  --username-bg: url(//raw.githubusercontent.com/dwnas/assets/main/snippets/nameBackground/12.gif); }
+   85% {  --username-bg: url(//raw.githubusercontent.com/dwnas/assets/main/snippets/nameBackground/13.gif); }
+    95% {  --username-bg: url(//raw.githubusercontent.com/dwnas/assets/main/snippets/nameBackground/14.gif); }
+     100% {  --username-bg: url(//raw.githubusercontent.com/dwnas/assets/main/snippets/nameBackground/15.gif); }
+}
+
+
+
+
+@import url("https://minidiscordthemes.github.io/FluentStatusIcons/FluentStatusIcons.theme.css");
+:root { 
+animation: nameBG 6s ease infinite;
+ /*
+ made by dwnas edited by Glitched
+                            
+*/}
+
+
+/* chat field */    
+ /*
+Change 1172507865630646358 to ur user id 
+*/
+[class*=contents]:has(img[src*="1172507865630646358"]) [class*=username],
+/* memberlist */
+ /*
+Change 1172507865630646358 to ur user id 
+*/
+[role=listitem] :has(img[src*="1172507865630646358"]) [class*=name-],
+/* settings profile card */
+[class*=profileCard] span,
+/* reviewdb */
+ /*
+Change 1172507865630646358 to ur user id 
+*/
+.vc-rdb-view :has(img[src*="1172507865630646358"]) [class*=username],
+/* replies */
+ /*
+Change 1172507865630646358 to ur user id 
+*/
+[class*=repliedMessage]:has(img[src*="1172507865630646358"]) [class*=username]
+ 
+ /* elements that aren't sized correctly, uncomment below if you want */
+
+/*,[class*=nameTag] [data-text-variant="text-sm/normal"],
+[class*=userPopoutInner]:has(img[src*="1172507865630646358"]) [class*=nickname],
+[class*=voiceUser]:has([style*="1172507865630646358"]) [class*=username]*/ 
+{
+    background-image: var(--username-bg) !important;
+    text-shadow: 0px 0px 0px;
+}
+ 
+@keyframes Namecolor {
+  0% { color: #ff0000; }
+  25% {  color: #00ff00; }
+  50% {  color: #0000ff; }
+  75% {  color: #00ffff; }
+  100% {  color: #ff00ff; }
+}
+@keyframes Mentioncolor {
+  0% { --mention-foreground: #ff0000; }
+  25% { --mention-foreground: #00ff00; }
+  50% {  --mention-foreground: #0000ff; }
+  75% {  --mention-foreground: #00ffff; }
+  100% {  --mention-foreground: #ff00ff; }
+}
+  /*
+Change 1172507865630646358 to ur user id 
+*/
+li:has(.contents_f41bb2 img[src*="1172507865630646358"]) .username_d30d99 {
+animation: Namecolor 6s ease infinite;
+}
+ /*
+Change 1172507865630646358 to ur user id 
+*/
+li:has([src*="1172507865630646358"]) .username_d30d99 {
+animation: Namecolor 6s ease infinite;
+}
+
+.panelTitleContainer__7a748 .title__10613 {
+animation: Namecolor 6s ease infinite;
+}
+:root[class*=theme]{
+--mention-background: ;
+animation: Mentioncolor 6s ease infinite;
+}
